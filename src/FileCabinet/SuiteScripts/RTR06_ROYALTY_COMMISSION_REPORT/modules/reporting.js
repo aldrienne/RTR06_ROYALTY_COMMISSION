@@ -3,8 +3,8 @@
  * @NModuleScope Public
  * @description Reporting functions for Royalty Management Suitelet
  */
-define(['N/search', 'N/query', 'N/log', './constants', './utils'],
-    function (search, query, log, constants, utils) {
+define(['N/search', 'N/query', 'N/log', './constants', './utils', './data'],
+    function (search, query, log, constants, utils, data) {
 
         /**
          * Creates the royalty report search with the specified filters
@@ -12,7 +12,7 @@ define(['N/search', 'N/query', 'N/log', './constants', './utils'],
          * @param {string} [filters.fromDate] - Start date for filtering
          * @param {string} [filters.toDate] - End date for filtering
          * @param {string} [filters.categoryId] - Royalty category ID
-         * @returns {Array} - The search results
+         * @returns {Object} - The search results with lines and totals
          */
         function createRoyaltyReportSearch(filters) {
             log.debug('filters', JSON.stringify(filters));
@@ -33,15 +33,13 @@ define(['N/search', 'N/query', 'N/log', './constants', './utils'],
             ];
 
             //Add filters here
-
             if (filters.categoryId) {
                 searchFilters.push("AND");
                 searchFilters.push(["item.custitem_tsc_royalty", "anyof", filters.categoryId]);
             }
-            log.emergency('filters', filters);
 
             if (filters.subsidiaryId) {
-                log.emergency('subsidiaryId', filters.subsidiaryId);
+                log.debug('subsidiaryId', filters.subsidiaryId);
                 searchFilters.push("AND");
                 searchFilters.push(["subsidiary", "anyof", filters.subsidiaryId]);
             }
@@ -158,26 +156,10 @@ define(['N/search', 'N/query', 'N/log', './constants', './utils'],
                 let royaltyPercentage = 0;
                 let calculationMethod = '';
                 if (filterParams.categoryId) {
-                    try {
-                        const queryResult = query.runSuiteQL({
-                            query: `
-                                SELECT custrecord_tsc_royalty_percent,custrecord_tsc_calc_perc_by
-                                FROM customrecord_tsc_royalty
-                                WHERE id = ?
-                            `,
-                            params: [filterParams.categoryId]
-                        });
-
-                        const results = queryResult.asMappedResults();
-                        if (results.length > 0 && results[0].custrecord_tsc_royalty_percent !== null) {
-                            royaltyPercentage = parseFloat(results[0].custrecord_tsc_royalty_percent) * 100;
-                        }
-                        if (results.length > 0 && results[0].custrecord_tsc_calc_perc_by !== null) {
-                            calculationMethod = results[0].custrecord_tsc_calc_perc_by;
-                        }
-                        log.debug('Retrieved royalty percentage', royaltyPercentage);
-                    } catch (e) {
-                        log.error('Error retrieving royalty percentage', e);
+                    const royaltyDetails = data.getRoyaltyDetails(filterParams.categoryId);
+                    if (royaltyDetails) {
+                        royaltyPercentage = royaltyDetails.percentage;
+                        calculationMethod = royaltyDetails.calculationMethod;
                     }
                 }
 
@@ -187,7 +169,6 @@ define(['N/search', 'N/query', 'N/log', './constants', './utils'],
 
                 // Generate HTML table rows
                 let tableHtml = '';
-                let totalRoyalty = 0;
 
                 if (results.lines.length > 0) {
                     // Process each result
@@ -204,6 +185,7 @@ define(['N/search', 'N/query', 'N/log', './constants', './utils'],
                         const taxes = result.amountTax || 0;
                         const totalSales = result.totalSales || 0;
                         const totalCost = result.totalCost || 0;
+                        
                         // Append table row
                         tableHtml += `
                     <tr>
@@ -222,6 +204,7 @@ define(['N/search', 'N/query', 'N/log', './constants', './utils'],
                     </tr>
                 `;
                     });
+                    
                     // Get method name for display
                     let calculationMethodName = '';
                     if (calculationMethod == '1') {
