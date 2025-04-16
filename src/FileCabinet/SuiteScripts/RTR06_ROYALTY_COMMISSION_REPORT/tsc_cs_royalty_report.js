@@ -57,35 +57,6 @@ define(['N/currentRecord', 'N/url', 'N/runtime'],
          * @param {Object} context
          */
         function exportReportCSV() {
-            try {
-                const currRecord = currentRecord.get();
-                
-                // Get filter values
-                const fromDate = currRecord.getValue({ fieldId: 'custpage_date_from' }) || '';
-                const toDate = currRecord.getValue({ fieldId: 'custpage_date_to' }) || '';
-                const categoryId = currRecord.getValue({ fieldId: 'custpage_category_filter' }) || '';
-                
-                // Build URL for redirect
-                const scriptId = runtime.getCurrentScript().id;
-                const deploymentId = runtime.getCurrentScript().deploymentId;
-                
-                const redirectUrl = url.resolveScript({
-                    scriptId: scriptId,
-                    deploymentId: deploymentId,
-                    params: {
-                        custpage_action: 'exportcsv',
-                        custpage_date_from: fromDate,
-                        custpage_date_to: toDate,
-                        custpage_category: categoryId
-                    }
-                });
-                
-                // Redirect to the same Suitelet with filter parameters
-                window.location.href = redirectUrl;
-            } catch (e) {
-                console.error('Error in exportReportCSV function', e);
-                alert('An error occurred while exporting the report: ' + e.message);
-            }
         }
         
         return {
