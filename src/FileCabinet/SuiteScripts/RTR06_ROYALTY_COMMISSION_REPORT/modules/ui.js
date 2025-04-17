@@ -110,7 +110,7 @@ define(['N/ui/serverWidget', 'N/log', './constants', './data'],
                         sublist.setSublistValue({
                             id: constants.SUBLIST_FIELD_SPLIT_PERCENTAGE,
                             line: lineCount,
-                            value: (parseFloat(result.custrecord_tsc_royalty_percent) * 100).toString()
+                            value: Math.round(parseFloat(result.custrecord_tsc_royalty_percent) * 100).toString()
                         });
                     }
     

@@ -140,7 +140,7 @@ define(['N/search', 'N/record', 'N/query', 'N/log', './constants', './utils'],
                     line: i
                 });
     
-                log.audit('values', { splitPercentage, previousSplitPercentage, calcPercentBy });
+                log.audit('handleSaveConfigurationValues', { splitPercentage, previousSplitPercentage, calcPercentBy });
     
                 // Use Record.submitfields with updated values object
                 record.submitFields({
