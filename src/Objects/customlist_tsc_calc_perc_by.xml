@@ -1,0 +1,19 @@
+<customlist scriptid="customlist_tsc_calc_perc_by">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Calculate Percentage By</name>
+  <customvalues>
+    <customvalue scriptid="val_399907_6965172_sb1_128">
+      <abbreviation>G</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Gross Sale</value>
+    </customvalue>
+    <customvalue scriptid="val_399908_6965172_sb1_472">
+      <abbreviation>N</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Net Profit</value>
+    </customvalue>
+  </customvalues>
+</customlist>
