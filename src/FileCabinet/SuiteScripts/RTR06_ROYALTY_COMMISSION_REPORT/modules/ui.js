@@ -220,10 +220,10 @@ define(['N/ui/serverWidget', 'N/log', './constants', './data'],
             });
     
             // Add "All Categories" option
-            categoryField.addSelectOption({
-                value: '',
-                text: 'All Categories'
-            });
+            // categoryField.addSelectOption({
+            //     value: '',
+            //     text: 'All Categories'
+            // });
     
             // Populate the filter dropdown with royalty records
             populateCategoryFilter(categoryField);

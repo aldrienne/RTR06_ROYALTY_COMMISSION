@@ -54,6 +54,7 @@
       <displaytype>NORMAL</displaytype>
       <displaywidth></displaywidth>
       <dynamicdefault></dynamicdefault>
+      <enabletextenhance>F</enabletextenhance>
       <encryptatrest>F</encryptatrest>
       <fieldtype>PERCENT</fieldtype>
       <globalsearch>F</globalsearch>
@@ -93,6 +94,7 @@
       <displaytype>LOCKED</displaytype>
       <displaywidth></displaywidth>
       <dynamicdefault></dynamicdefault>
+      <enabletextenhance>F</enabletextenhance>
       <encryptatrest>F</encryptatrest>
       <fieldtype>PERCENT</fieldtype>
       <globalsearch>F</globalsearch>
@@ -119,5 +121,110 @@
       <storevalue>T</storevalue>
       <subtab></subtab>
     </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_tsc_calc_perc_by">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <enabletextenhance>F</enabletextenhance>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>SELECT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>T</ismandatory>
+      <isparent>F</isparent>
+      <label>Calculate Percentage By</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete>NO_ACTION</onparentdelete>
+      <parentsubtab></parentsubtab>
+      <rolerestrict>F</rolerestrict>
+      <searchcomparefield></searchcomparefield>
+      <searchdefault></searchdefault>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype>[scriptid=customlist_tsc_calc_perc_by]</selectrecordtype>
+      <showinlist>F</showinlist>
+      <sourcefilterby></sourcefilterby>
+      <sourcefrom></sourcefrom>
+      <sourcelist></sourcelist>
+      <storevalue>T</storevalue>
+      <subtab></subtab>
+    </customrecordcustomfield>
   </customrecordcustomfields>
+  <instances>
+    <instance scriptid="val_399831_6965172_sb1_482">
+      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>Brand Comply</name>
+    </instance>
+    <instance scriptid="val_399832_6965172_sb1_473">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>26.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>James Deane</name>
+    </instance>
+    <instance scriptid="val_399833_6965172_sb1_517">
+      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>Chelsea DeNofa</name>
+    </instance>
+    <instance scriptid="val_399834_6965172_sb1_921">
+      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>Ben Hobson</name>
+    </instance>
+    <instance scriptid="val_399835_6965172_sb1_761">
+      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>30.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>Fun-Haver</name>
+    </instance>
+    <instance scriptid="val_399836_6965172_sb1_281">
+      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>RTR Vehicles</name>
+    </instance>
+    <instance scriptid="val_399837_6965172_sb1_367">
+      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>Loren Healy</name>
+    </instance>
+    <instance scriptid="val_399838_6965172_sb1_250">
+      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+      <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
+      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <isinactive>F</isinactive>
+      <name>AdamLZ</name>
+    </instance>
+  </instances>
+  <links>
+    <link>
+      <linkcategory>BASICTRANSACTIONSCUSTOM</linkcategory>
+      <linklabel></linklabel>
+      <linktasktype>LIST</linktasktype>
+    </link>
+  </links>
 </customrecordtype>

@@ -20,6 +20,7 @@
   <displaytype>NORMAL</displaytype>
   <displaywidth></displaywidth>
   <dynamicdefault></dynamicdefault>
+  <enabletextenhance>F</enabletextenhance>
   <encryptatrest>F</encryptatrest>
   <fieldtype>SELECT</fieldtype>
   <globalsearch>F</globalsearch>
