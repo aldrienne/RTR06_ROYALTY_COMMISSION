@@ -30,7 +30,7 @@
   <numberingmindigits></numberingmindigits>
   <numberingprefix></numberingprefix>
   <numberingsuffix></numberingsuffix>
-  <recordname>Royalty</recordname>
+  <recordname>Royalty Category</recordname>
   <showcreationdate>F</showcreationdate>
   <showcreationdateonlist>F</showcreationdateonlist>
   <showid>F</showid>
@@ -163,59 +163,59 @@
     </customrecordcustomfield>
   </customrecordcustomfields>
   <instances>
-    <instance scriptid="val_399831_6965172_sb1_482">
-      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+    <instance scriptid="val_511564_6965172_513">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>Brand Comply</name>
     </instance>
-    <instance scriptid="val_399832_6965172_sb1_473">
+    <instance scriptid="val_511565_6965172_834">
       <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>26.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>James Deane</name>
     </instance>
-    <instance scriptid="val_399833_6965172_sb1_517">
-      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+    <instance scriptid="val_511566_6965172_730">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>Chelsea DeNofa</name>
     </instance>
-    <instance scriptid="val_399834_6965172_sb1_921">
-      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+    <instance scriptid="val_511567_6965172_362">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>Ben Hobson</name>
     </instance>
-    <instance scriptid="val_399835_6965172_sb1_761">
-      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+    <instance scriptid="val_511568_6965172_891">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>30.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>Fun-Haver</name>
     </instance>
-    <instance scriptid="val_399836_6965172_sb1_281">
-      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+    <instance scriptid="val_511569_6965172_860">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>RTR Vehicles</name>
     </instance>
-    <instance scriptid="val_399837_6965172_sb1_367">
-      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+    <instance scriptid="val_511570_6965172_214">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>Loren Healy</name>
     </instance>
-    <instance scriptid="val_399838_6965172_sb1_250">
-      <custrecord_tsc_calc_perc_by></custrecord_tsc_calc_perc_by>
+    <instance scriptid="val_511571_6965172_552">
+      <custrecord_tsc_calc_perc_by>[scriptid=customlist_tsc_calc_perc_by.val_399908_6965172_sb1_472]</custrecord_tsc_calc_perc_by>
       <custrecord_tsc_previous_percent></custrecord_tsc_previous_percent>
-      <custrecord_tsc_royalty_percent>0.0%</custrecord_tsc_royalty_percent>
+      <custrecord_tsc_royalty_percent>10.0%</custrecord_tsc_royalty_percent>
       <isinactive>F</isinactive>
       <name>AdamLZ</name>
     </instance>

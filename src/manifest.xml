@@ -14,10 +14,6 @@
       <feature required="false">MAILMERGE</feature>
       <feature required="true">CUSTOMRECORDS</feature>
       <feature required="false">CREATESUITEBUNDLES</feature>
-    </features>
-    <objects>
-      <object>customlist_tsc_calc_perc_by.val_399907_6965172_sb1_128</object>
-      <object>customlist_tsc_calc_perc_by</object>
-    </objects>
+    </features>    
   </dependencies>
 </manifest>
